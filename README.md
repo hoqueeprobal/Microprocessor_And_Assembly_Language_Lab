@@ -18,3 +18,9 @@ It represents my journey and achievements in understanding **low-level programmi
 
 📘 [A Beginner’s Guide to 8086 Assembly Programming with EMU8086](https://amritoo.hashnode.dev/a-beginners-guide-to-assembly-language-using-emu8086)  
 💡 *A beginner-friendly article that introduces you to Intel 8086 Assembly concepts using the EMU8086 emulator.*
+
+
+## 💻 Topics Covered
+- Introduction to the Assembly environment
+- Registers and data handling in Assembly
+
