@@ -1,10 +1,12 @@
 .MODEL SMALL
 .STACK 100H
+
 .DATA
 A DB 38H
-B DB 39H
+B DB 31H
 
-.CODE
+.CODE  
+
 MAIN PROC
     MOV AX, @DATA
     MOV DS, AX
@@ -15,11 +17,12 @@ MAIN PROC
     MOV BL, B
     SUB BL, 30H
 
-    ADD AL, BL
+    SUB AL, BL
+
     ADD AL, 30H
 
-    MOV AH, 2
     MOV DL, AL
+    MOV AH, 2
     INT 21H
 
     MOV AH, 4CH
