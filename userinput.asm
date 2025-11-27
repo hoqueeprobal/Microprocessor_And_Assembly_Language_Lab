@@ -1,5 +1,5 @@
 .MODEL SMALL
-.STACK 100h
+.STACK 100H
 
 .DATA
 A DB 'Please insert a character:$'

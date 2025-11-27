@@ -22,14 +22,11 @@ MAIN PROC
     ;A + (B + 1)
     ADD AL, BL       
 
-  
     ADD AL, 30H
-
 
     MOV DL, AL
     MOV AH, 2
     INT 21H
-
 
 
     MOV AH, 4CH
