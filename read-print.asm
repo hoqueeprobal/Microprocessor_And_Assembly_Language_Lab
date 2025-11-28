@@ -1,0 +1,35 @@
+.MODEL SMALL
+.STACK 100H
+
+.DATA
+A DB 7 dup(?)
+
+.CODE
+MAIN PROC
+    MOV AX,@DATA
+    MOV DS,AX
+
+    MOV CX,7
+    MOV SI,0
+
+READ_LOOP:
+    MOV AH,1
+    INT 21H
+    MOV A[SI],AL
+    INC SI
+    LOOP READ_LOOP
+
+    MOV CX,7
+    MOV SI,0
+
+PRINT_LOOP:
+    MOV DL,A[SI]
+    MOV AH,2
+    INT 21H
+    INC SI
+    LOOP PRINT_LOOP
+
+    MOV AH,4CH
+    INT 21H
+MAIN ENDP
+END MAIN
